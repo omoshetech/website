@@ -8,7 +8,7 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server 'ec2-54-65-72-237.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{app}
+server 'ec2-54-65-72-237.ap-northeast-1.compute.amazonaws.com', user: 'ec2-user', roles: %w{web}
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
