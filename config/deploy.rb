@@ -1,24 +1,42 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'omoshetech.com'
+set :repo_url, 'https://github.com/omoshetech/website.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
-#ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Hardcodes branch to always be master
 # This could be overridden in a stage config file
-set :branch, :master
+#set :branch, :master
 
-set :deploy_to, -> { "/srv/www/#{fetch(:application)}" }
+set :deploy_to, -> { "/var/www/html" }
 
 # Use :debug for more verbose output when troubleshooting
 set :log_level, :info
 
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
-# set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
-set :linked_files, fetch(:linked_files, []).push('.env')
+set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
+#set :linked_files, fetch(:linked_files, []).push('.env')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
+
+# Theme path
+set :theme_path, -> { releases_path.join(release_timestamp).join("web/app/themes/omoshetech") }
+
+# npm
+set :npm_target_path, fetch(:theme_path)
+set :npm_flags, "--silent"
+
+# Grunt
+set :grunt_target_path, fetch(:theme_path)
+set :grunt_tasks, 'build'
+before 'deploy:updated', 'grunt'
+
+# WP-CLI
+set :wpcli_remote_url, 'http://omoshetech.com'
+set :wpcli_local_url, 'http://omoshetech.dev'
+server "omoshetech.dev", user: 'vagrant', password: 'vagrant', roles: %w{dev}
+set :dev_path, '/srv/www/omoshetech.dev/current'
 
 namespace :deploy do
   desc 'Restart application'
