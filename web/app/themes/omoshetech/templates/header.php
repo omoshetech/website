@@ -16,6 +16,9 @@
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));
         endif;
       ?>
+      <ul class="nav navbar-nav navbar-right">
+        <li><?php get_search_form(); ?></li>
+      </ul>
     </nav>
   </div>
 </header>
