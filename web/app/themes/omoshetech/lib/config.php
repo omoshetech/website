@@ -3,7 +3,6 @@
  * Enable theme features
  */
 add_theme_support('soil-clean-up');         // Enable clean up from Soil
-add_theme_support('soil-relative-urls');    // Enable relative URLs from Soil
 add_theme_support('soil-nice-search');      // Enable /?s= to /search/ redirect from Soil
 add_theme_support('soil-disable-trackbacks');
 add_theme_support('soil-disable-asset-versioning');
@@ -14,6 +13,7 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
  * Configuration values
  */
 define('GOOGLE_ANALYTICS_ID', 'UA-46162672-1'); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
+define('ADDTHIS_PROFILE_ID', 'ra-54b3fe0d3b6dd5bc');
 
 if (!defined('WP_ENV')) {
   define('WP_ENV', 'production');  // scripts.php checks for values 'production' or 'development'
@@ -51,16 +51,13 @@ function roots_display_sidebar() {
        * The second element must be an array even if there's only 1 argument.
        */
       array(
-        'is_404',
-        'is_front_page'
+        'is_404'
       ),
       /**
        * Page template checks (via is_page_template())
        * Any of these page templates that return true won't show the sidebar
        */
-      array(
-        'template-custom.php'
-      )
+      array()
     );
     $display = apply_filters('roots/display_sidebar', $sidebar_config->display);
   }  

@@ -54,7 +54,8 @@ class Roots_Nav_Walker extends Walker_Nav_Menu {
  * Return 'menu-slug' for nav menu classes
  */
 function roots_nav_menu_css_class($classes, $item) {
-  $slug = sanitize_title($item->title);
+  $category = get_category_by_path($item->url, false);
+  $slug = $category->slug;
   $classes = preg_replace('/(current(-menu-|[-_]page[-_])(item|parent|ancestor))/', 'active', $classes);
   $classes = preg_replace('/^((menu|page)[-_\w+]+)+/', '', $classes);
 

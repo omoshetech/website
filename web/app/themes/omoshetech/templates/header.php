@@ -7,7 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <?php if (is_home()): ?>
+        <h1 class="navbar-brand"><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="<?php bloginfo('name'); ?>"></a></h1>
+      <?php else: ?>
+        <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="<?php bloginfo('name'); ?>"></a>
+      <?php endif; ?>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -16,6 +20,9 @@
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'walker' => new Roots_Nav_Walker(), 'menu_class' => 'nav navbar-nav'));
         endif;
       ?>
+      <ul class="nav navbar-nav navbar-right">
+        <li><?php get_search_form(); ?></li>
+      </ul>
     </nav>
   </div>
 </header>

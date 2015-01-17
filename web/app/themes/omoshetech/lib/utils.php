@@ -7,6 +7,10 @@ function is_element_empty($element) {
   return !empty($element);
 }
 
+function get_class_from_pagenate_link($link) {
+    return strstr($link, 'current') ? ' class="active"' : '';
+}
+
 // Tell WordPress to use searchform.php from the templates/ directory
 function roots_get_search_form() {
   $form = '';
