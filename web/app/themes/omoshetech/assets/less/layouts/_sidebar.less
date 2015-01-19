@@ -1,3 +1,40 @@
 .sidebar {
   .make-sm-column(@sidebar-sm-columns);
+
+  .widget {
+    margin-bottom: 30px;
+
+    h4 {
+      margin: 0 0 15px 0;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: @brand-primary;
+    }
+  }
+
+  .widget_text {
+    .textwidget {
+      padding: 0 15px;
+    }
+
+    .author-image {
+      padding-right: 15px;
+    }
+
+    .author-name {
+      margin-top: 0;
+      font-size: @font-size-large;
+    }
+
+    .author-profile {
+      overflow: hidden;
+    }
+  }
+
+  .widget_categories {
+    ul {
+      padding: 0 15px;
+      list-style-type: none;
+    }
+  }
 }
