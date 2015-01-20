@@ -5,13 +5,78 @@
 @sidebar-sm-columns:    4;
 
 
-// Brand colors
+// Colors
 // -------------------------
 
-@brand-primary:         #27ae60;
+@gray-lighter:          lighten(@gray-base, 90%);
+@brand-primary:         #fc6b00;
+
+
+// Scaffolding
+// -------------------------
+
+@link-color:            darken(@brand-primary, 5%);
+@link-hover-color:      @link-color;
+@link-hover-decoration: none;
 
 
 // Glyphicons path
 // -------------------------
 
 @icon-font-path:        "../vendor/bootstrap/fonts/";
+
+
+// Typography
+// -------------------------
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, "Hiragino Mincho ProN", "游明朝", serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", Osaka-mono, "MS Gothic", monospace;
+@font-family-base:        @font-family-sans-serif;
+@headings-font-weight:    400;
+
+
+// Components
+// -------------------------
+
+@border-radius-base:    0;
+@border-radius-large:   0;
+@border-radius-small:   0;
+
+
+// Buttons
+// -------------------------
+
+@btn-default-color:     #fff;
+@btn-default-bg:        @brand-primary;
+@btn-default-border:    #fff;
+
+
+// Forms
+// -------------------------
+
+@input-border:          #fff;
+@input-border-focus:    #fff;
+
+
+// Navbar
+// -------------------------
+
+@navbar-default-bg:     @brand-primary;
+
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           darken(@brand-primary, 10%);
+@navbar-default-toggle-icon-bar-bg:        #fff;
+@navbar-default-toggle-border-color:       #fff;
+
+// Pagination
+// -------------------------
+
+@pagination-color:        @link-color;
+@pagination-bg:           #fff;
+@pagination-border:       @gray-lighter;
+
+@pagination-hover-color:  @link-color;
+@pagination-hover-bg:     #fff;
+@pagination-hover-border: @gray-lighter;

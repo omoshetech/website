@@ -1,9 +1,5 @@
 <?php
-  if (is_single()) {
-    the_post_thumbnail('large');
-  } else {
-    the_post_thumbnail('medium');
-  }
+  the_post_thumbnail('large', array('class' => 'img-responsive'));
 ?>
 <time class="updated" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
-<div class="addthis_sharing_toolbox" data-url="<?php echo get_permalink(); ?>" data-title="<?php the_title_attribute(); ?>"></div>
+<div class="addthis_sharing_toolbox pull-right" data-url="<?php echo get_permalink(); ?>" data-title="<?php the_title_attribute(); ?>"></div>
