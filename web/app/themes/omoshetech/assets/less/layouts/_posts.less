@@ -1,5 +1,27 @@
-.hentry header { }
-.hentry time { }
-.hentry .byline { }
-.hentry .entry-content { }
-.hentry footer { }
+.hentry header {
+  .entry-title {
+    margin-top: 0;
+
+    .single & {
+      margin-top: 20px;
+    }
+  }
+}
+
+.hentry .entry-meta {
+  margin-bottom: 20px;
+  background-color: @gray-lighter;
+
+  .updated {
+    margin-left: 4px;
+    line-height: 24px;
+  }
+
+  .addthis_sharing_toolbox {
+    margin: 4px 2px 0 0;
+  }
+}
+
+.hentry .entry-summary {
+  margin-bottom: 20px;
+}
