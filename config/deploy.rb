@@ -37,6 +37,7 @@ set :wpcli_remote_url, 'http://omoshetech.com'
 set :wpcli_local_url, 'http://omoshetech.dev'
 server "omoshetech.dev", user: 'vagrant', password: 'vagrant', roles: %w{dev}
 set :dev_path, '/srv/www/omoshetech.dev/current'
+set :wpcli_rsync_options, %w[-avz --rsh=ssh -e "ssh -i /Users/takuya/.ssh/p-wordpress.pem"]
 
 namespace :deploy do
   desc 'Restart application'
