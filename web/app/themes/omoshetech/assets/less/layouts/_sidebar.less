@@ -26,8 +26,10 @@
       font-size: @font-size-large;
     }
 
-    .author-profile {
-      overflow: hidden;
+    @media (max-width: @screen-xs-max), (min-width: @screen-md-min) {
+      .author-profile {
+        overflow: hidden;
+      }
     }
   }
 
