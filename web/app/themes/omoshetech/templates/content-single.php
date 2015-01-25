@@ -11,11 +11,6 @@
     </div>
     <footer>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
-      <?php
-        if ( function_exists('wp_related_posts') ) {
-          wp_related_posts();
-        }
-      ?>
     </footer>
   </article>
 <?php endwhile; ?>
