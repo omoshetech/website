@@ -23,3 +23,11 @@ function disable_checked_ontop($args, $post_id = 0) {
   return $args;
 }
 add_filter('wp_terms_checklist_args', 'disable_checked_ontop');
+
+/**
+ * Add the "img-responsive" class to classes of images in posts
+ */
+function add_image_responsive_class($classes) {
+  return 'img-responsive ' . $classes;
+}
+add_filter('get_image_tag_class', 'add_image_responsive_class');
