@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffb68b7459dcbdc017f9f3b40566c7ec",
+    "hash": "11faab5e4341557253a13753b690db8d",
     "packages": [
         {
             "name": "composer/installers",
@@ -283,15 +283,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "2.3.13",
+            "version": "2.3.14",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/2.3.13"
+                "reference": "tags/2.3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/redirection.2.3.13.zip",
+                "url": "http://downloads.wordpress.org/plugin/redirection.2.3.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -303,15 +303,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "1.7.1",
+            "version": "1.7.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/1.7.1"
+                "reference": "tags/1.7.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.1.zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.7.3.zip",
                 "reference": null,
                 "shasum": null
             },

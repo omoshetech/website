@@ -62,8 +62,8 @@
     "vlucas/phpdotenv": "1.0.9",
     "roots/soil": "3.0.2",
     "roots/wp-stage-switcher": "1.0.3",
-    "wpackagist-plugin/redirection": "2.3.13",
-    "wpackagist-plugin/wordpress-seo": "1.7.1",
+    "wpackagist-plugin/redirection": "2.3.14",
+    "wpackagist-plugin/wordpress-seo": "1.7.3",
     "wpackagist-plugin/wp-multibyte-patch": "2.2"
   },
   "extra": {
