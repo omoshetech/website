@@ -64,7 +64,8 @@
     "roots/wp-stage-switcher": "1.0.3",
     "wpackagist-plugin/redirection": "2.3.14",
     "wpackagist-plugin/wordpress-seo": "1.7.4",
-    "wpackagist-plugin/wp-multibyte-patch": "2.2"
+    "wpackagist-plugin/wp-multibyte-patch": "2.2",
+    "roots/wp-h5bp-htaccess": "1.1.0"
   },
   "extra": {
     "installer-paths": {
