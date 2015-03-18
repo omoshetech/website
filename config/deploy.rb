@@ -33,7 +33,7 @@ set :grunt_tasks, 'build'
 before 'deploy:updated', 'grunt'
 
 # WP-CLI
-set :wpcli_remote_url, 'http://omoshetech.com'
+set :wpcli_remote_url, 'https://omoshetech.com'
 set :wpcli_local_url, 'http://omoshetech.dev'
 server "omoshetech.dev", user: 'vagrant', password: 'vagrant', roles: %w{dev}
 set :dev_path, '/srv/www/omoshetech.dev/current'
