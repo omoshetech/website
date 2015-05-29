@@ -42,11 +42,11 @@
       "type": "package",
       "package": {
         "name": "wordpress/wordpress-ja",
-        "version": "4.1.1",
+        "version": "4.2.2",
         "type": "webroot",
         "dist": {
           "type": "zip",
-          "url": "https://ja.wordpress.org/wordpress-4.1.1-ja.zip"
+          "url": "https://ja.wordpress.org/wordpress-4.2.2-ja.zip"
         },
         "require" : {
           "fancyguy/webroot-installer": "1.1.0"
@@ -56,15 +56,15 @@
   ],
   "require": {
     "php": ">=5.4",
-    "wordpress/wordpress-ja": "4.1.1",
+    "wordpress/wordpress-ja": "4.2.2",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
     "roots/soil": "3.0.2",
     "roots/wp-stage-switcher": "1.0.3",
-    "wpackagist-plugin/redirection": "2.3.14",
-    "wpackagist-plugin/wordpress-seo": "2.0.1",
-    "wpackagist-plugin/wp-multibyte-patch": "2.2",
+    "wpackagist-plugin/redirection": "2.3.16",
+    "wpackagist-plugin/wordpress-seo": "2.1.1",
+    "wpackagist-plugin/wp-multibyte-patch": "2.3.1",
     "roots/wp-h5bp-htaccess": "1.1.0"
   },
   "extra": {
