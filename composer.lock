@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab89a18ce0ef21b1930c9ca0320e59f8",
+    "hash": "bc0d34200f72992e29cfccfde2836efd",
     "packages": [
         {
             "name": "composer/installers",
@@ -311,10 +311,10 @@
         },
         {
             "name": "wordpress/wordpress-ja",
-            "version": "4.2.2",
+            "version": "4.3",
             "dist": {
                 "type": "zip",
-                "url": "https://ja.wordpress.org/wordpress-4.2.2-ja.zip",
+                "url": "https://ja.wordpress.org/wordpress-4.3-ja.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -345,15 +345,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.1.1",
+            "version": "2.3.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.1.1"
+                "reference": "tags/2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -365,15 +365,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-multibyte-patch",
-            "version": "2.3.1",
+            "version": "2.4",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wp-multibyte-patch/",
-                "reference": "tags/2.3.1"
+                "reference": "tags/2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -389,6 +389,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
     },
